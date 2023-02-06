@@ -7,6 +7,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    color: #fff;
+}
+
 header {
     z-index: 999;
     position: absolute;
@@ -147,6 +151,21 @@ header .brand {
     width: 100%;
     min-height: 100vh;
     background: rgba(0, 0, 0, 0.8);
+}
+
+.about h1 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 0.5em;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 20%;
 }
 
 /*media queries*/

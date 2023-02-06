@@ -141,6 +141,15 @@ header .brand {
     object-fit: cover;
 }
 
+/*about*/
+.about {
+    padding: 100px 200px;
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/*media queries*/
 @media (max-width: 1040px) {
     header {
         padding: 12px 20px;

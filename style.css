@@ -197,6 +197,40 @@ header .brand {
     background: radial-gradient(circle at 10% 20%, rgb(107, 157, 171) 23.8%, rgb(92, 122, 158) 66%);
 }
 
+.gallery img {
+    z-index: 000;
+    height: 50%;
+    object-fit: cover;
+}
+
+.slider-nav {
+    z-index: 800;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(80px);
+    margin-bottom: 12px;
+}
+
+.nav-btn {
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+    transition-duration: 0.5s;
+}
+
+.nav-btn:not(:last-child) {
+    margin-right: 20px;
+}
+
+.nav-btn:hover {
+    transform: scale(1.2);
+}
+
 /*media queries*/
 @media (max-width: 1040px) {
     header {

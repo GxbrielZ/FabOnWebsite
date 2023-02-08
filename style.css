@@ -223,12 +223,28 @@ header .brand {
     transition-duration: 0.5s;
 }
 
+.nav-btn.active {
+    background: #2696e9;
+}
+
 .nav-btn:not(:last-child) {
     margin-right: 20px;
 }
 
 .nav-btn:hover {
     transform: scale(1.2);
+}
+
+.img-slide {
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0% at 0 50%);
+}
+
+.img-slide.active {
+    clip-path: circle(150% at 0 50%);
+    transition: 2s ease;
+    transition-property: clip-path;
 }
 
 /*media queries*/

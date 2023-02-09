@@ -197,10 +197,16 @@ header .brand {
     background: radial-gradient(circle at 10% 20%, rgb(107, 157, 171) 23.8%, rgb(92, 122, 158) 66%);
 }
 
-.gallery img {
-    z-index: 000;
+.gallery-frame {
+    margin: 0 auto;
+    width: 50%;
     height: 50%;
-    object-fit: cover;
+}
+
+.gallery img {
+    height: 800px;
+    width: fit-content;
+    max-width: 800px;
 }
 
 .slider-nav {

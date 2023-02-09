@@ -193,64 +193,103 @@ header .brand {
 /*gallery*/
 .gallery {
     width: 100%;
-    min-height: 100vh;
-    background: radial-gradient(circle at 10% 20%, rgb(107, 157, 171) 23.8%, rgb(92, 122, 158) 66%);
+    height: 100vh;
+    background: #A5948D;
 }
 
-.gallery-frame {
+.gallery-text
+{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+    color: #050409;
+}
+
+.container-gallery
+{
     margin: 0 auto;
-    width: 50%;
-    height: 50%;
-}
-
-.gallery img {
-    height: 800px;
-    width: fit-content;
-    max-width: 800px;
-}
-
-.slider-nav {
-    z-index: 800;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translateY(80px);
-    margin-bottom: 12px;
+    width: 70%;
+    padding-bottom: 40%;
+    background: #4c4c4c;
+    border: solid 10px #050409;
 }
 
-.nav-btn {
-    width: 12px;
-    height: 12px;
-    background: #fff;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
-    transition-duration: 0.5s;
-}
-
-.nav-btn.active {
-    background: #2696e9;
-}
-
-.nav-btn:not(:last-child) {
-    margin-right: 20px;
-}
-
-.nav-btn:hover {
-    transform: scale(1.2);
-}
-
-.img-slide {
+.slide-img
+{
     position: absolute;
     width: 100%;
-    clip-path: circle(0% at 0 50%);
+    height: 100%;
+    z-index: -1;
 }
 
-.img-slide.active {
-    clip-path: circle(150% at 0 50%);
-    transition: 2s ease;
-    transition-property: clip-path;
+.slide-img img
+{
+    width: fit-content;
+    height: 100%;
+}
+
+#i1, #i2, #i3
+{
+    display: none;
+}
+
+.pre, .nxt
+{
+    width: 12%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: rgba(88, 88, 88, .4);
+    z-index: 99;
+    cursor: pointer;
+}
+
+.pre:hover, .nxt:hover {
+    background: rgba(88, 88, 88, .5);
+}
+
+.pre
+{
+    left: 0;
+}
+
+.nxt
+{
+    right: 0;
+}
+
+.gallery-nav
+{
+    width: 100%;
+    height: 11px;
+    bottom: 5%;
+    position: absolute;
+    text-align: center;
+    z-index: 99;
+}
+
+.dots
+{
+    top: -5px;
+    width: 18px;
+    height: 18px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 50%;
+    display: inline-block;
+    background: rgba(0, 0, 0, .6);
+    cursor: pointer;
+}
+
+#i1:checked ~ #one, #i2:checked ~ #two, #i3:checked ~ #three
+{
+    z-index: 9;
+}
+
+#i1:checked ~ .gallery-nav #dot1, #i2:checked ~ .gallery-nav #dot2, #i3:checked ~ .gallery-nav #dot3
+{
+    background: #205C6A;
 }
 
 /*media queries*/

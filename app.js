@@ -7,7 +7,7 @@ menuBtn.addEventListener("click", () => {
 });
 
 
-const btns = document.querySelectorAll(".nav-btn");
+/*const btns = document.querySelectorAll(".nav-btn");
 const slides = document.querySelectorAll(".img-slide");
 
 var sliderNav = function(manual) {
@@ -27,4 +27,4 @@ btns.forEach((btn, i) => {
     btn.addEventListener("click", () => {
         sliderNav(i);
     });
-});
+});*/

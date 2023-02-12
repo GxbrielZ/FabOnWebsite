@@ -1,30 +1,29 @@
 const menuBtn = document.querySelector(".menu-btn");
 const navigation = document.querySelector(".nav");
+const buttons = document.querySelectorAll("[data-carousel-button]");
 
 menuBtn.addEventListener("click", () => {
     menuBtn.classList.toggle("active");
     navigation.classList.toggle("active");
 });
 
+buttons.forEach(button => {
+    button.addEventListener("click", () => {
+        const offset = button.dataset.carouselButton
+                        === "next" ? 1 : -1;
+        const slides = button
+            .closest("[data-carousel]")
+            .querySelector("[data-slides]");
 
-/*const btns = document.querySelectorAll(".nav-btn");
-const slides = document.querySelectorAll(".img-slide");
+        const activeSlide = slides.querySelector("[data-active]");
+        let newIndex = [...slides.children]
+            .indexOf(activeSlide) + offset;
+        if(newIndex < 0) newIndex = slides.children.length - 1;
+        if(newIndex >= slides.children.length) newIndex = 0;
 
-var sliderNav = function(manual) {
-    btns.forEach((btn) => {
-        btn.classList.remove("active");
+        slides.children[newIndex].dataset.active = true;
+        delete activeSlide.dataset.active;
     });
+});
 
-    slides.forEach((slide) => {
-        slide.classList.remove("active");
-    });
 
-    btns[manual].classList.add("active");
-    slides[manual].classList.add("active");
-}
-
-btns.forEach((btn, i) => {
-    btn.addEventListener("click", () => {
-        sliderNav(i);
-    });
-});*/

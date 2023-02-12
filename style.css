@@ -63,12 +63,14 @@ header .brand {
 
 .home {
     padding: 100px 200px;
+    margin-bottom: 2px;
     position: relative;
     width: 100%;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    /*box-shadow: 0px 30px 20px  #292828;*/
 }
 
 .home:before {
@@ -148,9 +150,10 @@ header .brand {
 /*about*/
 .about {
     padding: 2% 10%;
+    margin-bottom: 2px;
     width: 100%;
     min-height: 100vh;
-    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+    background: radial-gradient(circle at 10% 20%, rgb(38, 37, 35) 0%, rgb(78, 76, 74) 90.2%);
 }
 
 .about h1 {
@@ -194,102 +197,71 @@ header .brand {
 .gallery {
     width: 100%;
     height: 100vh;
-    background: #A5948D;
+    background: radial-gradient(circle at 10% 20%, rgb(78, 76, 74) 0%, rgb(38, 37, 35) 90.2%);
 }
 
-.gallery-text
-{
-    font-size: 2rem;
-    text-align: center;
-    font-weight: 700;
-    color: #050409;
-}
-
-.container-gallery
-{
+.carousel {
+    width: 60%;
+    height: 60%;
+    position: relative;
+    top: 20%;
     margin: 0 auto;
-    position: relative;
-    width: 70%;
-    padding-bottom: 40%;
-    background: #4c4c4c;
-    border: solid 10px #050409;
+    background: black;
 }
 
-.slide-img
-{
+.carousel > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.slide {
     position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+}
+
+.slide > img {
     width: 100%;
     height: 100%;
-    z-index: -1;
+    object-fit: contain;
+    object-position: center;
 }
 
-.slide-img img
-{
-    width: fit-content;
-    height: 100%;
+.slide[data-active] {
+    opacity: 1;
+    z-index: 700;
+    transition-delay: 0;
 }
 
-#i1, #i2, #i3
-{
-    display: none;
-}
-
-.pre, .nxt
-{
-    width: 12%;
-    height: 100%;
+.carousel-button {
     position: absolute;
-    top: 0;
-    background: rgba(88, 88, 88, .4);
-    z-index: 99;
+    z-index: 800;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.5);
     cursor: pointer;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
-.pre:hover, .nxt:hover {
-    background: rgba(88, 88, 88, .5);
+.carousel-button:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
-.pre
-{
-    left: 0;
+.carousel-button.prev {
+    left: 1rem;
 }
 
-.nxt
-{
-    right: 0;
-}
-
-.gallery-nav
-{
-    width: 100%;
-    height: 11px;
-    bottom: 5%;
-    position: absolute;
-    text-align: center;
-    z-index: 99;
-}
-
-.dots
-{
-    top: -5px;
-    width: 18px;
-    height: 18px;
-    margin: 0 4px;
-    position: relative;
-    border-radius: 50%;
-    display: inline-block;
-    background: rgba(0, 0, 0, .6);
-    cursor: pointer;
-}
-
-#i1:checked ~ #one, #i2:checked ~ #two, #i3:checked ~ #three
-{
-    z-index: 9;
-}
-
-#i1:checked ~ .gallery-nav #dot1, #i2:checked ~ .gallery-nav #dot2, #i3:checked ~ .gallery-nav #dot3
-{
-    background: #205C6A;
+.carousel-button.next {
+    right: 1rem;
 }
 
 /*media queries*/

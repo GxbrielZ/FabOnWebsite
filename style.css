@@ -134,3 +134,18 @@ body {
     justify-content: flex-end;
     background: rgb(8, 65, 91);
 }
+
+/*About*/
+.about {
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+}
+
+.about .container  h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.about .container  p {
+    font-size: 1.2em;
+    text-align: center;
+}

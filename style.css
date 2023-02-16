@@ -139,7 +139,12 @@ body {
 .about {
     background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
     height: 50vh;
-    padding-top: 3%;
+}
+
+.about h1 {
+    text-align: center;
+    padding: 2%;
+    font-size: 2em;
 }
 
 .about .container {
@@ -150,4 +155,9 @@ body {
 .about .container .about-content {
     margin: 0 auto;
     width: 25%;
+}
+
+.about-content h2 {
+    text-align: center;
+    margin-bottom: 1.5%;
 }

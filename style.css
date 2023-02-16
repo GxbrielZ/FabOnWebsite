@@ -161,3 +161,9 @@ body {
     text-align: center;
     margin-bottom: 1.5%;
 }
+
+/*Gallery*/
+.gallery {
+    background: linear-gradient(180.2deg, rgb(120, 85, 137) -6.9%, rgb(35, 9, 31) 76.7%);
+    height: 100vh;
+}

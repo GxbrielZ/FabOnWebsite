@@ -169,22 +169,23 @@ body {
 }
 
 .slideshow-container {
-    max-width: 50%;
-    position: relative;
+    width: 1000px;
+    height: 750px;
     margin: 2% auto;
+    background-color: black;
 }
 
 .slide {
     display: none;
 }
 
+.slide img {
+    height: 750px;
+}
+
 .prev, .next {
     cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
+    padding: 2%;
     color: white;
     font-weight: bold;
     font-size: 2em;

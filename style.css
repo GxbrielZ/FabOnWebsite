@@ -169,7 +169,7 @@ body {
 }
 
 .gallery-left {
-    width: 60%;
+    width: 60vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -178,13 +178,13 @@ body {
 }
 
 .gallery-right {
-    width: 40%;
+    width: 40vw;
     background: linear-gradient(135deg, rgb(82, 229, 231) 10%, rgb(19, 12, 183) 100%);
 }
 
 .slideshow-container {
-    width: 800px;
-    height: 750px;
+    width: 50vw;
+    height: 75vh;
     display: flex;
     justify-content: center;
     background: black;
@@ -195,13 +195,13 @@ body {
 }
 
 .slide img {
-    max-width: 750px;
-    height: 750px;
+    max-width: 75vh;
+    height: 75vh;
 }
 
-.slider-buttons {
-    width: 800px;
+.prev, .next {
     font-size: 2.4em;
+    padding: 5% 2%;
     cursor: pointer;
     color: white;
     font-weight: bold;
@@ -210,20 +210,24 @@ body {
 }
 
 .prev {
-    
+    position: absolute;
+    top: 185%;
+    left: 5%;
 }
 
 .next {
-
+    position: absolute;
+    top: 185%;
+    right: 45%;
 }
 
 .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    font-size: 3em;
 }
 
 .switch-dots {
     position: relative;
-    top: -11%;
+    top: -4%;
 }
 
 .dot {

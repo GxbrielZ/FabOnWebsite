@@ -182,32 +182,48 @@ body {
     background: linear-gradient(135deg, rgb(82, 229, 231) 10%, rgb(19, 12, 183) 100%);
 }
 
+.slideshow-container {
+    width: 800px;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    background: black;
+}
+
 .slide {
     display: none;
 }
 
 .slide img {
+    max-width: 750px;
     height: 750px;
 }
 
-.prev, .next {
+.slider-buttons {
+    width: 800px;
+    font-size: 2.4em;
     cursor: pointer;
-    padding: 2%;
     color: white;
     font-weight: bold;
-    font-size: 2em;
     transition: 0.6s ease;
-    border-radius: 0 10% 10% 0;
     user-select: none;
 }
 
+.prev {
+    
+}
+
 .next {
-    right: 0;
-    border-radius: 10% 0 0 10%;
+
 }
 
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
+}
+
+.switch-dots {
+    position: relative;
+    top: -11%;
 }
 
 .dot {

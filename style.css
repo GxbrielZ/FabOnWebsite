@@ -164,15 +164,22 @@ body {
 
 /*Gallery*/
 .gallery {
-    background: linear-gradient(180.2deg, rgb(120, 85, 137) -6.9%, rgb(35, 9, 31) 76.7%);
+    display: flex;
     height: 100vh;
 }
 
-.slideshow-container {
-    width: 1000px;
-    height: 750px;
-    margin: 2% auto;
-    background-color: black;
+.gallery-left {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(89deg, rgb(21, 74, 189) 0.1%, rgb(26, 138, 211) 51.5%, rgb(72, 177, 234) 100.2%);
+}
+
+.gallery-right {
+    width: 40%;
+    background: linear-gradient(135deg, rgb(82, 229, 231) 10%, rgb(19, 12, 183) 100%);
 }
 
 .slide {

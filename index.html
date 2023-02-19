@@ -57,32 +57,36 @@
             </section>
 
             <section class="gallery">
-                <h1>Gallery</h1>
-                <div class="slideshow-container">
-                    <div class="slide fade">
-                        <img src="./img/kitchen.jpg" alt="#">
+                <div class="gallery-left">
+                    <div class="slideshow-container">
+                        <div class="slide fade">
+                            <img src="./img/kitchen.jpg" alt="#">
+                        </div>
+    
+                        <div class="slide fade">
+                            <img src="./img/shower.jpg" alt="#">
+                        </div>
+    
+                        <div class="slide fade">
+                            <img src="./img/livingroom.jpg" alt="#">
+                        </div>
+    
+                        <a class="prev" onclick="plusSlides(-1)">
+                            &#10094;
+                        </a>
+                        <a class="next" onclick="plusSlides(1)">
+                            &#10095;
+                        </a>
                     </div>
-
-                    <div class="slide fade">
-                        <img src="./img/shower.jpg" alt="#">
+    
+                    <div class="switch-dots">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
                     </div>
-
-                    <div class="slide fade">
-                        <img src="./img/livingroom.jpg" alt="#">
-                    </div>
-
-                    <a class="prev" onclick="plusSlides(-1)">
-                        &#10094;
-                    </a>
-                    <a class="next" onclick="plusSlides(1)">
-                        &#10095;
-                    </a>
                 </div>
-
-                <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
+                <div class="gallery-right">
+                    
                 </div>
             </section>
 

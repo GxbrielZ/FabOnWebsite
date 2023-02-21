@@ -256,9 +256,18 @@ body {
     background: linear-gradient(135deg, rgb(82, 229, 231) 10%, rgb(19, 12, 183) 100%);
 }
 
+.mini-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5% 0;
+}
+
 .mini-gallery img {
-    width: 250px;
-    height: 300px;
+    width: 150px;
+    height: 230px;
+    margin-left: 1%;
+    margin-bottom: 1%;
 }
 
 /*Footer*/

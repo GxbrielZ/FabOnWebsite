@@ -170,19 +170,14 @@ body {
 
 .gallery-left {
     width: 60vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: linear-gradient(89deg, rgb(21, 74, 189) 0.1%, rgb(26, 138, 211) 51.5%, rgb(72, 177, 234) 100.2%);
+    background: black;
 }
 
 .slideshow-container {
-    width: 50vw;
-    height: 75vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
-    background: black;
+    margin: 0.5% 0;
 }
 
 .slide {
@@ -191,7 +186,7 @@ body {
 
 .slide img {
     max-width: 75vh;
-    height: 75vh;
+    height: 98.5vh;
 }
 
 .prev, .next {
@@ -207,13 +202,13 @@ body {
 .prev {
     position: absolute;
     top: 185%;
-    left: 5%;
+    left: 0%;
 }
 
 .next {
     position: absolute;
     top: 185%;
-    right: 45%;
+    right: 40%;
 }
 
 .prev:hover, .next:hover {
@@ -221,8 +216,9 @@ body {
 }
 
 .switch-dots {
-    position: relative;
-    top: -4%;
+    position: absolute;
+    left: 27%;
+    top: 246%;
 }
 
 .dot {

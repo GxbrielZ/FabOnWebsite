@@ -141,25 +141,24 @@ body {
     height: 50vh;
 }
 
-.about h1 {
-    text-align: center;
-    padding: 2%;
-    font-size: 2em;
-}
-
 .about .container {
     display: flex;
     justify-content: space-between;
 }
 
-.about .container .about-content {
-    margin: 0 auto;
+.about-content {
+    margin: 5% auto;
     width: 25%;
 }
 
-.about-content h2 {
+.about-content h1 {
+    font-size: 1.8em;
     text-align: center;
-    margin-bottom: 1.5%;
+    margin-bottom: 2%;
+}
+
+.about-content p {
+    font-size: 1.1em;
 }
 
 /*Gallery*/

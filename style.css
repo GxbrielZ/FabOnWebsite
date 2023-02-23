@@ -40,7 +40,8 @@ body {
     font-size: 1.1em;
 }
 
-.nav-links ul li.active a {
+.nav-links ul li.checked a {
+    font-size: 1.05em;
     font-weight: 600;
     text-decoration: underline;
 }
@@ -109,13 +110,13 @@ body {
 
 /*Container-left*/
 .container-left {
-    width: 55%;
-    background: linear-gradient(114.3deg, rgb(19, 126, 57) 0.2%, rgb(8, 65, 91) 68.5%);
+    width: 70vw;
+    background: linear-gradient(109.6deg, rgb(20, 30, 48) 11.2%, rgb(36, 59, 85) 91.1%);
 }
 
 .header {
-    width: 60%;
-    margin-top: 30%;
+    width: 50%;
+    margin-top: 25%;
     margin-left: 10%;
 }
 
@@ -129,10 +130,10 @@ body {
 
 /*Container-right*/
 .container-right {
-    width: 45%;
+    width: 30vw;
     display: flex;
     justify-content: flex-end;
-    background: rgb(8, 65, 91);
+    
 }
 
 /*About*/

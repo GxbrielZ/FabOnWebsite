@@ -295,9 +295,13 @@ footer h4 {
     list-style: none;
 }
 
+.socials img {
+    width: 30px;
+    height: 30px;
+}
+
 .phone-number, .socials {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }

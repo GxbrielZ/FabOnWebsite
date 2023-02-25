@@ -17,7 +17,7 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    background: #252422;
 }
 
 .navbar a {
@@ -111,7 +111,7 @@ body {
 /*Container-left*/
 .container-left {
     width: 70vw;
-    background: linear-gradient(109.6deg, rgb(20, 30, 48) 11.2%, rgb(36, 59, 85) 91.1%);
+    background: #3C7A89;
 }
 
 .header {
@@ -138,7 +138,7 @@ body {
 
 /*About*/
 .about {
-    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+    background: #252422;
     height: 50vh;
 }
 
@@ -249,7 +249,7 @@ body {
 /*Right side gallery*/
 .gallery-right {
     width: 40vw;
-    background: linear-gradient(135deg, rgb(82, 229, 231) 10%, rgb(19, 12, 183) 100%);
+    background: #3C7A89;
 }
 
 .mini-gallery {
@@ -269,7 +269,7 @@ body {
 /*Footer*/
 footer {
     height: 50vh;
-    background: black;
+    background: #252422;
 }
 
 footer h4 {
@@ -283,12 +283,10 @@ footer h4 {
 
 .phone-number {
     width: 50vw;
-    background: linear-gradient(114.3deg, rgb(19, 126, 57) 0.2%, rgb(8, 65, 91) 68.5%);
 }
 
 .socials {
     width: 50vw;
-    background: radial-gradient(circle at 10% 20%, rgb(255, 200, 124) 0%, rgb(252, 251, 121) 90%);
 }
 
 .socials ul {

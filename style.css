@@ -278,6 +278,27 @@ footer {
     align-items: center;
 }
 
+.contact img {
+    width: 30px;
+    height: 30px;
+    margin-right: 2%;
+}
+
+.phone-number h2 {
+    margin-bottom: 2%;
+}
+
+.phone-number a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.phone-number a:hover {
+    text-decoration: underline;
+}
+
 .socials h1 {
     margin-bottom: 2%;
 }
@@ -286,15 +307,15 @@ footer {
     list-style: none;
 }
 
-.socials ul li {
+.socials ul li a {
     display: flex;
     align-items: center;
+    color: #fff;
+    text-decoration: none;
 }
 
-.socials img {
-    width: 30px;
-    height: 30px;
-    margin-right: 2%;
+.socials ul li a:hover {
+    text-decoration: underline;
 }
 
 .phone-number, .socials {

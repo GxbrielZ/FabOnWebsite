@@ -111,7 +111,7 @@ body {
 /*Container-left*/
 .container-left {
     width: 70vw;
-    background: #3C7A89;
+    background: linear-gradient(130deg, rgba(60,122,137,1) 0%, rgba(45,87,97,1) 42%);
 }
 
 .header {
@@ -248,7 +248,7 @@ body {
 /*Right side gallery*/
 .gallery-right {
     width: 40vw;
-    background: #3C7A89;
+    background: linear-gradient(130deg, rgba(60,122,137,1) 0%, rgba(45,87,97,1) 42%);
 }
 
 .mini-gallery {
@@ -268,7 +268,7 @@ body {
 /*Footer*/
 footer {
     height: 40vh;
-    background: #252422;
+    background: linear-gradient(180deg, rgba(37,36,34,1) 0%, rgba(8,7,7,1) 6%);
 }
 
 .contact {
@@ -327,7 +327,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #252422;
+    background: #080707;
 }
 
 .copyright p {

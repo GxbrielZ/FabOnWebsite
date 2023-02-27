@@ -43,7 +43,6 @@ body {
 .nav-links ul li.checked a {
     font-size: 1.05em;
     font-weight: 600;
-    text-decoration: underline;
 }
 
 .navbar .menu-hamburger {
@@ -115,17 +114,17 @@ body {
 }
 
 .header {
-    width: 50%;
+    width: 55%;
     margin-top: 25%;
     margin-left: 10%;
 }
 
 .header h1 {
-    font-size: 2.3em;
+    font-size: 2.5em;
 }
 
 .header p {
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 
 /*Container-right*/

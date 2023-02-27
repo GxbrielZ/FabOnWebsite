@@ -4,6 +4,23 @@
     box-sizing: border-box;
 }
 
+/*Scrollbar*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #6b6b6b; 
+}
+   
+::-webkit-scrollbar-thumb {
+    background: rgb(53, 53, 53); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(41, 41, 41); 
+}
+
 body {
     color: white;
     font-family: 'Poppins', sans-serif;

@@ -28,6 +28,7 @@ body {
 
 /*Navbar*/
 .navbar {
+    z-index: 99;
     position: fixed;
     top: 0;
     left: 0;
@@ -58,6 +59,7 @@ body {
 .nav-links ul li {
     margin: 0 25px;
     font-size: 1.1em;
+    letter-spacing: 1.5px;
 }
 
 .nav-links ul li.checked a {
@@ -66,21 +68,16 @@ body {
 }
 
 .navbar .menu-hamburger {
+    z-index: 99;
     display: none;
-    position: absolute;
-    top: 50px;
-    right: 50px;
+    margin-right: 2%;
     width: 35px;
 }
 
 @media screen and (max-width: 900px) {
-    .navbar {
-        padding: 0;
-    }
 
     .navbar .logo {
-        margin-top: 50px;
-        margin-left: 50px;
+       margin-left: 5%;
     }
 
     .navbar .menu-hamburger {
@@ -181,6 +178,21 @@ body {
     font-size: 1.1em;
 }
 
+@media screen and (max-width: 900px) {
+    .about {
+        height: 110vh;
+    }
+
+    .about .container {
+        flex-wrap: wrap;
+    }
+
+    .about-content {
+        margin: 5% 2%;
+        width: 100%;
+    }
+}
+
 /*Gallery*/
 .gallery {
     display: flex;
@@ -203,7 +215,7 @@ body {
 }
 
 .slide img {
-    max-width: 75vh;
+    max-width: 100%;
     height: 90vh;
 }
 
@@ -264,6 +276,33 @@ body {
     to {opacity: 1}
 }
 
+@media screen and (max-width: 900px) {
+    .gallery {
+        height: 70vh;
+    }
+
+    .slideshow-container {
+        height: 80vh;
+    }
+
+    .slide img {
+        height: 70vh;
+    }
+
+    .prev {
+        top: 245%;
+    }
+    
+    .next {
+        position: absolute;
+        top: 245%;
+    }
+
+    .switch-dots {
+        top: 280%;
+    }
+}
+
 /*Footer*/
 footer {
     height: 40vh;
@@ -303,6 +342,10 @@ footer {
 
 .socials ul {
     list-style: none;
+}
+
+.socials ul li {
+    margin-bottom: 1%;
 }
 
 .socials ul li a {

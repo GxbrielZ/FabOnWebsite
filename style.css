@@ -28,7 +28,10 @@ body {
 
 /*Navbar*/
 .navbar {
-    height: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 9vh;
     padding: 1.5%;
     display: flex;
     justify-content: space-between;
@@ -121,7 +124,7 @@ body {
 /*Home*/
 .home {
     display: flex;
-    height: 90vh;
+    height: 100vh;
 }
 
 /*Container-left*/
@@ -132,7 +135,7 @@ body {
 
 .header {
     width: 55%;
-    margin-top: 25%;
+    margin-top: 30%;
     margin-left: 10%;
 }
 

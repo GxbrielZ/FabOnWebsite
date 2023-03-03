@@ -3,12 +3,8 @@
     font-size: 2em;
 }
 
-.nav-links ul {
-    width: 60%;
-}
-
 .nav-links ul li {
-    margin: 0 25px;
+    margin: 0 45px;
 }
 
 /*Home*/

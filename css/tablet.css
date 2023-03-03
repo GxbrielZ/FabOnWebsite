@@ -1,6 +1,7 @@
 /*Navbar*/
 .navbar .logo {
-    font-size: 1.8em;
+    font-size: 1.6em;
+    margin-left: 2%;
 }
 
 .nav-links {
@@ -31,41 +32,52 @@
 }
 
 /*Home*/
-.home {
-    grid-template-columns: 2fr 1fr;
-}
-
 /*Container-left*/
 .header {
-    width: 55%;
-    margin: 30% 10% 5% 10%;
+    margin: 15% 5% 5% 5%;
 }
 
 .header h1 {
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 .header p {
-    font-size: 1.4em;
+    font-size: 1.3em;
+}
+
+/*Container-right*/
+.container-right {
+    background: #000;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container-right img {
+    width: auto;
 }
 
 /*About*/
 .about-content {
-    margin: 5%;
+    margin: 5% 5% 0% 5%;
     width: 100%;
+}
+
+.about-content:last-child {
+    margin-bottom: 5%;
 }
 
 /*Gallery*/
 .prev {
-    top: 210%;
+    top: 235%;
 }
 
 .next {
-    top: 210%;
+    top: 235%;
 }
 
 .switch-dots {
-    top: 250%;
+    top: 275%;
 }
 
 /*Footer*/

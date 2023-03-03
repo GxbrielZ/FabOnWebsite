@@ -1,31 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/*Scrollbar*/
-::-webkit-scrollbar {
-    width: 10px;
-}
-  
-::-webkit-scrollbar-track {
-    background: #6b6b6b; 
-}
-   
-::-webkit-scrollbar-thumb {
-    background: rgb(53, 53, 53); 
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: rgb(41, 41, 41); 
-}
-
-body {
-    color: white;
-    font-family: 'Poppins', sans-serif;
-}
-
 /*Navbar*/
 .navbar {
     z-index: 99;
@@ -72,51 +44,6 @@ body {
     display: none;
     margin-right: 2%;
     width: 35px;
-}
-
-@media screen and (max-width: 900px) {
-
-    .navbar .logo {
-       margin-left: 5%;
-    }
-
-    .navbar .menu-hamburger {
-        display: block;
-    }
-
-    .navbar .menu-hamburger:hover {
-        cursor: pointer;
-    }
-
-    .nav-links {
-        top: 0;
-        left: 0;
-        position: absolute;
-        background-color: rgba(255, 255, 255, 0.2);
-        backdrop-filter: blur(8px);
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: -100%;
-    }
-
-    .nav-links.mobile-menu {
-        margin-left: 0;
-    }
-
-    .nav-links ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-links ul li {
-        cursor: pointer;
-        margin: 25px 0;
-        font-size: 1.2em;
-    }
 }
 
 /*Home*/
@@ -175,7 +102,7 @@ body {
 /*About*/
 .about {
     background: linear-gradient(180deg, rgba(37,36,34,1) 0%, rgba(8,7,7,1) 5%, rgba(8,7,7,1) 96%, rgba(37,36,34,1) 100%);
-    height: 50vh;
+    height: 100%;
 }
 
 .about .container {
@@ -199,16 +126,12 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-    .about {
-        height: 110vh;
-    }
-
     .about .container {
         flex-wrap: wrap;
     }
 
     .about-content {
-        margin: 5% 2%;
+        margin: 8% 2%;
         width: 100%;
     }
 }
@@ -216,16 +139,16 @@ body {
 /*Gallery*/
 .gallery {
     display: flex;
-    height: 90vh;
+    height: 100%;
 }
 
 .gallery-content {
-    width: 100vw;
+    width: 100%;
     background: black;
 }
 
 .slideshow-container {
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
 }
@@ -298,11 +221,11 @@ body {
 
 @media screen and (max-width: 900px) {
     .gallery {
-        height: 70vh;
+        height: 100%;
     }
 
     .slideshow-container {
-        height: 80vh;
+        height: 100%;
     }
 
     .slide img {
@@ -310,22 +233,23 @@ body {
     }
 
     .prev {
-        top: 252%;
+        top: 255%;
     }
     
     .next {
         position: absolute;
-        top: 252%;
+        top: 255%;
     }
 
     .switch-dots {
-        top: 289%;
+        left: 45%;
+        top: 292%;
     }
 }
 
 /*Footer*/
 footer {
-    height: 40vh;
+    height: 100%;
     background: linear-gradient(180deg, rgba(37,36,34,1) 0%, rgba(8,7,7,1) 5%);
 }
 

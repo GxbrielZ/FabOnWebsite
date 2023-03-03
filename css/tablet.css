@@ -1,40 +1,55 @@
 /*Navbar*/
-    .navbar .logo {
-        
-    }
+.navbar .logo {
+    font-size: 1.8em;
+}
 
-    .nav-links ul {
-       
-    }
+.nav-links {
+    top: 0;
+    left: 0;
+    position: static;background: none;
+    width: 70%;
+    height: 9vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 0;
+}
 
-    .nav-links ul li {
-        margin: 0 25px;
-    }
+.nav-links ul {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 80%;
+    font-size: 0.9em;
+}
 
-    .navbar .menu-hamburger {
-        display: none;
-    }
+.nav-links ul li {
+    margin: 0 15px;
+}
 
-    /*Home*/
-    .home {
-        grid-template-columns: 2fr 1fr;
-    }
+.navbar .menu-hamburger {
+    display: none;
+}
 
-    /*Container-left*/
-    .header {
-        width: 55%;
-        margin: 30% 10% 5% 10%;
-    }
+/*Home*/
+.home {
+    grid-template-columns: 2fr 1fr;
+}
 
-    .header h1 {
-        font-size: 2.5em;
-    }
+/*Container-left*/
+.header {
+    width: 55%;
+    margin: 30% 10% 5% 10%;
+}
 
-    .header p {
-        font-size: 1.4em;
-    }
+.header h1 {
+    font-size: 2.5em;
+}
 
-    /*About*/
+.header p {
+    font-size: 1.4em;
+}
+
+/*About*/
 .about-content {
     margin: 5%;
     width: 100%;

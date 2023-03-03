@@ -1,0 +1,37 @@
+@media only screen and (min-width: 768px) {
+/*Navbar*/
+    .navbar .logo {
+        
+    }
+
+    .nav-links ul {
+       
+    }
+
+    .nav-links ul li {
+        margin: 0 25px;
+    }
+
+    .navbar .menu-hamburger {
+        display: none;
+    }
+
+    /*Home*/
+    .home {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    /*Container-left*/
+    .header {
+        width: 55%;
+        margin: 30% 10% 5% 10%;
+    }
+
+    .header h1 {
+        font-size: 2.5em;
+    }
+
+    .header p {
+        font-size: 1.4em;
+    }
+}

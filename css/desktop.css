@@ -1,0 +1,67 @@
+/*Navbar*/
+.navbar .logo {
+    font-size: 2em;
+}
+
+.nav-links ul {
+    width: 60%;
+}
+
+.nav-links ul li {
+    margin: 0 25px;
+}
+
+/*Home*/
+.home {
+    margin-top: 0%;
+}
+
+/*Container-left*/
+.header {
+    width: 65%;
+    margin: 30% 0% 0% 10%;
+}
+
+.header h1 {
+    font-size: 2.5em;
+}
+
+.header p {
+    font-size: 1.4em;
+}
+
+/*Container-right*/
+.container-right {
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.container-right img {
+    width: 100%;
+}
+
+/*About*/
+.about .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-content {
+    margin: 5% auto;
+    width: 25%;
+}
+
+/*Gallery*/
+.prev {
+    top: 170%;
+}
+
+.next {
+    top: 170%;
+}
+
+.switch-dots {
+    top: 216%;
+    left: 48%;
+}

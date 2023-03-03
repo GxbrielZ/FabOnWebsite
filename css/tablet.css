@@ -65,7 +65,8 @@
 
 .phone-number, .socials {
     width: 50vw;
-    padding: 0 15%;
+    margin: 0 8% 0 8%;
+    padding: 0;
 }
 
 .copyright p {

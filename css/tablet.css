@@ -69,19 +69,6 @@
     margin-bottom: 5%;
 }
 
-/*Gallery*/
-.prev {
-    top: 235%;
-}
-
-.next {
-    top: 235%;
-}
-
-.switch-dots {
-    top: 275%;
-}
-
 /*Footer*/
 .contact {
     height: 40vh;

@@ -166,7 +166,9 @@ body {
 
 .gallery-content {
     width: 100%;
+    position: relative;
     background: black;
+    white-space: nowrap;
 }
 
 .slideshow-container {
@@ -196,13 +198,13 @@ body {
 
 .prev {
     position: absolute;
-    top: 2550px;
+    top: 40%;
     left: 0%;
 }
 
 .next {
     position: absolute;
-    top: 2550px;
+    top: 40%;
     right: 0%;
 }
 
@@ -213,7 +215,7 @@ body {
 .switch-dots {
     position: absolute;
     left: 45%;
-    top: 2890px;
+    top: 93%;
 }
 
 .dot {

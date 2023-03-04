@@ -22,17 +22,3 @@
 .header {
     margin: 45% 5% 5% 5%;
 }
-
-/*Gallery*/
-.prev {
-    top: 200%;
-}
-
-.next {
-    top: 200%;
-}
-
-.switch-dots {
-    top: 241%;
-    left: 47%;
-}

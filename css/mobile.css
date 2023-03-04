@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /*Scrollbar*/
 ::-webkit-scrollbar {
     width: 10px;
@@ -81,11 +85,6 @@ body {
     margin: 25px 0;
     font-size: 1.2em;
     letter-spacing: 1.5px;
-}
-
-.nav-links ul li.checked a {
-    font-size: 1.05em;
-    font-weight: 600;
 }
 
 .navbar .menu-hamburger {

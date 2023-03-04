@@ -27,6 +27,11 @@
 
 .nav-links ul li {
     margin: 0 15px;
+    transition: 0.6s ease;
+}
+
+.nav-links ul li:hover {
+    font-size: 1.3em;
 }
 
 .navbar .menu-hamburger {
@@ -67,6 +72,11 @@
 
 .about-content:last-child {
     margin-bottom: 5%;
+}
+
+/*Gallery*/
+.switch-dots {
+    left: 46%;
 }
 
 /*Footer*/

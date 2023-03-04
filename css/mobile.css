@@ -144,8 +144,8 @@ body {
 }
 
 .about-content {
-    margin: 8% 5%;
-    width: 100%;
+    margin: 8% auto;
+    width: 80%;
 }
 
 .about-content h1 {
@@ -214,7 +214,7 @@ body {
 
 .switch-dots {
     position: absolute;
-    left: 45%;
+    left: 43%;
     top: 93%;
 }
 
